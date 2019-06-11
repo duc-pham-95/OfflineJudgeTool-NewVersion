@@ -1,0 +1,13 @@
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\bin\Debug\JudgeTool.exe.config
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\bin\Debug\JudgeTool.exe
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\bin\Debug\JudgeTool.pdb
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Debug\JudgeTool.csprojAssemblyReference.cache
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Debug\JudgeTool.MainForm.resources
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Debug\JudgeTool.Properties.Resources.resources
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Debug\JudgeTool.csproj.GenerateResource.cache
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Debug\JudgeTool.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Debug\JudgeTool.exe
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Debug\JudgeTool.pdb
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Debug\JudgeTool.SettingForm.resources
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Debug\JudgeTool.Results.resources
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Debug\JudgeTool.ListResults.resources

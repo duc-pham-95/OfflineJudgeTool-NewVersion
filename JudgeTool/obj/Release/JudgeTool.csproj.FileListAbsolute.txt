@@ -1,0 +1,12 @@
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\bin\Release\JudgeTool.exe.config
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\bin\Release\JudgeTool.exe
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\bin\Release\JudgeTool.pdb
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Release\JudgeTool.ListResults.resources
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Release\JudgeTool.MainForm.resources
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Release\JudgeTool.Properties.Resources.resources
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Release\JudgeTool.Results.resources
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Release\JudgeTool.SettingForm.resources
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Release\JudgeTool.csproj.GenerateResource.cache
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Release\JudgeTool.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Release\JudgeTool.exe
+C:\Users\DELL\source\repos\JudgeTool\JudgeTool\obj\Release\JudgeTool.pdb
