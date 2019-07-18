@@ -9,7 +9,56 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
+class Student implements Comparable<Student>
+{
+    long id;
+    String name;
+    int average = 0;
 
+    public Student(long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    @Override
+    public int compareTo(Student t) {
+       if(this.average > t.average)
+       {
+           return -1;
+       }
+       else if(this.average < t.average)
+       {
+           return 1;
+       }
+       else
+       {
+           if(this.id > t.id)
+           {
+               return 1;
+           }
+           else if(this.id < t.id)
+           {
+               return -1;
+           }
+           else
+           {
+               return 0;
+           }
+       }
+    }
+
+    @Override
+    public String toString() {
+        return this.id + " " + this.name + " " + this.average;
+    }
+    
+
+
+
+   
+    
+    
+}
 public class Main {
 
        
@@ -17,26 +66,34 @@ public class Main {
 		InputReader ip = new InputReader(System.in);
                 int n = ip.nextInt();
                 int m = ip.nextInt();
-                HashMap<String, String> hm = new HashMap<>();
-                for(int i = 0; i < m; i++)
-                {
-                    hm.put(ip.next(), ip.next());
-                }
+                ArrayList<Student> list = new ArrayList<>();
                 for(int i = 0; i < n; i++)
                 {
-                    String s = ip.next();
-                    if(hm.containsKey(s))
+                    Student s = new Student(ip.nextLong(), ip.next());
+                    int c = ip.nextInt();
+                    int p = 0;
+                    int count = 0;
+                    int sum = 0;
+                    for(int j = 0; j < c; j++)
                     {
-                        if(hm.get(s).length() < s.length())
+                        int temp = ip.nextInt();
+                        if(temp >= 50)
                         {
-                            System.out.print(hm.get(s)+" ");
-                        }
-                        else
-                        {
-                            System.out.print(s+ " ");
+                            p += 4;
+                            count++;
+                            sum += temp;
                         }
                     }
-                   
+                    if(p >= m)
+                    {
+                        s.average = sum / count;
+                        list.add(s);
+                    }
+                }
+                Collections.sort(list);
+                for(Student temp : list)
+                {
+                    System.out.println(temp);
                 }
              
                 

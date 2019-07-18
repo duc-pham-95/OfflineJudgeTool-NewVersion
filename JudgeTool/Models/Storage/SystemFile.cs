@@ -37,18 +37,25 @@ namespace JudgeTool.Models.Storage
         {
             DirectoryInfo dir = new DirectoryInfo(SystemFolder.DataDir);
             foreach (FileInfo file in dir.GetFiles())
-            {
-                
+            {               
                 if (file.Extension.Equals(".in"))
-                {
-                    
+                {                   
                     file.CopyTo(SystemFolder.GetTestInDir() + @"\" + file.Name);
                 }
                 if (file.Extension.Equals(".out") || file.Extension.Equals(".ans"))
                 {
-                    string text = File.ReadAllText(file.FullName);
-                    File.WriteAllText(SystemFolder.GetTestOutDir() + @"\" + file.Name, text.TrimEnd('\n').TrimEnd('\r'));
+                    //string text = File.ReadAllText(file.FullName);
+                    //File.WriteAllText(SystemFolder.GetTestOutDir() + @"\" + file.Name, text.TrimEnd('\n').TrimEnd('\r'));
                     //file.CopyTo(SystemFolder.GetTestOutDir() + @"\" + file.Name);
+
+                    string[] lines = File.ReadAllLines(file.FullName);
+                    for (int i = 0; i < lines.Length; ++i)
+                    {
+                        lines[i] = lines[i].Trim();
+                    }
+                    File.WriteAllLines(SystemFolder.GetTestOutDir() + @"\" + file.Name, lines);
+                    string text = File.ReadAllText(SystemFolder.GetTestOutDir() + @"\" + file.Name);
+                    File.WriteAllText(SystemFolder.GetTestOutDir() + @"\" + file.Name, text.TrimEnd('\n').TrimEnd('\r'));
                 }
             }
         }
